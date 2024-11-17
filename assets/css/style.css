@@ -328,10 +328,11 @@ a {
 footer {
   background: #0b0f32;
   background-size: cover;
-  padding: 0px 0 0px !important;
+  padding: 10px;
   color: #fff;
   font-family: sans-serif !important;
   line-height: 26px !important;
+  text-align: center;
 }
 
 section.banner h1 {
@@ -648,11 +649,6 @@ section.call-us-banner h4 {
 
   section.banner br {
     display: none;
-  }
-
-  footer {
-    text-align: center;
-    padding-bottom: 40px !important;
   }
 }
 @media (min-width: 992px) {
