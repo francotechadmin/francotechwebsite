@@ -252,6 +252,11 @@ section.banner {
 .logodiv {
   position: absolute;
 }
+
+.logo-img {
+  max-width: 450px;
+}
+
 header {
   position: absolute;
   width: 100%;
