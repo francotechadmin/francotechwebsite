@@ -1,26 +1,32 @@
-# Responsive Web Design Project
+<a id="readme-top"></a>
 
-This is the codebase for a responsive web design project.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/francotechadmin/francotechwebsite">
+    <img src="assets/images/francotechlogowhite.png" alt="Logo" width="" height="">
+  </a>
 
-## Project Structure
+<h3 align="center">Franco Technologies Landing Page</h3>
 
-- `assets/`: Contains all static files such as CSS, JavaScript, and images.
-  - `css/`: Contains all the CSS files for styling the website. There are separate stylesheets for mobile and web layouts.
-  - `js/`: Contains JavaScript files for adding functionality to the website. The `db.js` file is used for handling data.
-  - `images/`: Contains all the images used in the website.
-- `index.html`: The main HTML file that represents the home page of the website.
+  <p align="center">
+    Landing page for a Franco Technologies website.
+    <br />
+    <br />
+    <a href="https://francotechnologies.tech">View Site</a>
+    ·
+    <a href="https://github.com/francotechadmin/francotechwebsite/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/francotechadmin/francotechwebsite/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-## Setup
+<!-- ABOUT THE PROJECT -->
 
-To run this project locally, follow these steps:
+## About The Project
 
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in your browser.
+[![Product Name Screen Shot][product-screenshot]](https://francotechnologies.tech)
 
-## Contributing
+This is a landing page for Franco Technologies, a software development company. The website is built using HTML, CSS, and JavaScript. It is hosted on GitHub Pages.
 
-We welcome contributions! Please see the issues section to find something you'd like to work on.
-
-## License
-
-This project is licensed under the MIT License.
+[product-screenshot]: assets/images/FT_SC.png
