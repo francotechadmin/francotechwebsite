@@ -359,95 +359,84 @@ section.banner ul.yel-list {
 
 section.portfolio {
   padding: 50px 0;
+  text-align: center;
   background-color: #f9f9f9;
-  font-family: "Poppins", sans-serif;
 }
 
 section.portfolio h2 {
   font-size: 32px;
   font-weight: 600;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #333;
+  margin-bottom: 20px;
 }
 
 section.portfolio p {
   font-size: 16px;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #666;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .portfolio-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  text-align: left;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
 }
 
 .portfolio-item img {
-  width: 40%;
+  width: 100%;
   height: auto;
-  object-fit: cover;
-  border-right: 2px solid #eee;
 }
 
-.portfolio-details {
-  padding: 20px;
-  width: 60%;
-  justify-items: center;
-}
-
-.portfolio-details h3 {
+.portfolio-item h3 {
   font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin: 15px;
   color: #333;
 }
 
-.portfolio-details p {
+.portfolio-item p {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin: 0 15px 15px;
   color: #666;
-  max-width: 500px;
 }
 
-.portfolio-details a {
+.portfolio-item a {
+  display: inline-block;
+  margin: 0 15px 15px;
   font-size: 14px;
   color: #fa3e77;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid #fa3e77;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: inline-block;
-  transition: all 0.3s ease;
 }
 
-.portfolio-details a:hover {
-  background-color: #fa3e77;
-  color: #fff;
+.portfolio-item a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-item .view-project {
+  color: #fa3e77;
+  font-weight: 600;
   text-decoration: none;
+  display: inline-block;
+  margin: 0 15px 15px;
 }
 
-@media only screen and (max-width: 768px) {
-  .portfolio-item {
-    flex-direction: column;
-  }
-
-  .portfolio-item img {
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid #eee;
-  }
-
-  .portfolio-details {
-    width: 100%;
-    text-align: center;
-  }
+.portfolio-item .view-project:hover {
+  text-decoration: underline;
 }
 
 .banner-form {
@@ -645,7 +634,7 @@ section.call-us-banner h4 {
   }
 
   .banner-subtitle {
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
     width: 80%;
     font-weight: 400;
@@ -671,8 +660,12 @@ section.call-us-banner h4 {
   }
 
   section.banner h1 {
-    margin: 20px 0 0;
+    margin: 100px 0 10px 0px;
     font-size: 28px;
+  }
+
+  section.banner ul.yel-list {
+    margin: 50px 0 100px;
   }
 
   section.banner ul.yel-list li {
