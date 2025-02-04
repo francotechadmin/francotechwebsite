@@ -375,6 +375,13 @@ section.portfolio p {
   color: #555;
 }
 
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
@@ -398,6 +405,7 @@ section.portfolio p {
 
 .portfolio-desc {
   padding: 20px;
+  max-width: 450px;
 }
 
 .portfolio-item img {
