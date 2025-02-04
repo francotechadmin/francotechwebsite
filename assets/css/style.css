@@ -396,6 +396,10 @@ section.portfolio p {
   transform: translateY(-5px);
 }
 
+.portfolio-desc {
+  padding: 20px;
+}
+
 .portfolio-item img {
   width: 100%;
   height: auto;
