@@ -1,32 +1,32 @@
-<a id="readme-top"></a>
+# gabrielfranco.tech
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/francotechadmin/francotechwebsite">
-    <img src="assets/images/francotechlogowhite.png" alt="Logo" width="" height="">
-  </a>
+Personal consulting site for Gabriel Franco — Senior AI & Full-Stack Engineer.
 
-<h3 align="center">Franco Technologies Landing Page</h3>
+**Live:** [francotech.dev](https://francotech.dev)
 
-  <p align="center">
-    Landing page for a Franco Technologies website.
-    <br />
-    <br />
-    <a href="https://francotechnologies.tech">View Site</a>
-    ·
-    <a href="https://github.com/francotechadmin/francotechwebsite/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/francotechadmin/francotechwebsite/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
+## Stack
 
-<!-- ABOUT THE PROJECT -->
+- [Vite](https://vitejs.dev/) + [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- Deployed on [Vercel](https://vercel.com/)
 
-## About The Project
+## Dev
 
-[![Product Name Screen Shot][product-screenshot]](https://francotechnologies.tech)
+```bash
+npm install
+npm run dev
+```
 
-This is a landing page for Franco Technologies, a software development company. The website is built using HTML, CSS, and JavaScript. It is hosted on GitHub Pages.
+## Deploy
 
-[product-screenshot]: assets/images/FT_SC.png
+Push to `main` — Vercel auto-deploys.
+
+```bash
+npm run build   # preview the production build locally
+npm run preview
+```
+
+## Assets
+
+Drop updated `headshot.png` into `public/assets/images/` to swap the photo.
