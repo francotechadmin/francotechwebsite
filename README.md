@@ -1,4 +1,4 @@
-# gabrielfranco.tech
+# Franco Technologies
 
 Personal consulting site for Gabriel Franco — Senior AI & Full-Stack Engineer.
 
