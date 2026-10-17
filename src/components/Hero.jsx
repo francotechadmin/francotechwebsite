@@ -17,7 +17,7 @@ export default function Hero() {
           {/* Text content */}
           <div className="flex-1 min-w-0">
 
-            <motion.div {...fadeUp(0.1)} className="mb-3 md:mb-2">
+            <motion.div {...fadeUp(0.1)} className="mb-4 md:mb-2">
               <span className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 bg-gray-100 px-4 py-1.5 rounded-full">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 Open to new projects
@@ -26,7 +26,7 @@ export default function Hero() {
 
             <motion.h1
               {...fadeUp(0.2)}
-              className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-tightest text-gray-900 mb-5 md:mb-6"
+              className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-tightest text-gray-900 mb-6"
             >
               I build<br />
               AI agents &amp;<br />
@@ -35,12 +35,12 @@ export default function Hero() {
 
             <motion.p
               {...fadeUp(0.32)}
-              className="text-lg text-gray-500 max-w-md leading-relaxed mb-6 md:mb-8"
+              className="text-lg text-gray-500 max-w-md leading-relaxed mb-8"
             >
               What could your team build with a senior AI engineer who's shipped it at Fortune 500 scale?
             </motion.p>
 
-            <motion.div {...fadeUp(0.38)} className="mb-5 md:mb-8 flex flex-col gap-2">
+            <motion.div {...fadeUp(0.38)} className="mb-7 md:mb-8 flex flex-col gap-2">
               {[
                 'RAG system over 50k+ industrial procedures',
                 'Self-serve AI agent platform for trading analysts',
@@ -53,7 +53,7 @@ export default function Hero() {
               ))}
             </motion.div>
 
-            <motion.div {...fadeUp(0.42)} className="mb-6 md:mb-8">
+            <motion.div {...fadeUp(0.42)} className="mb-8">
               <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">
                 Previously at
               </p>
