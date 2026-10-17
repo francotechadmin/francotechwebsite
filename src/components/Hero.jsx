@@ -12,33 +12,20 @@ const services = [
   'AI & LLM',
   'React · Next.js',
   'Python · FastAPI',
-  'AWS · GCP',
+  'AWS · GCP · Azure',
 ]
 
 export default function Hero() {
   return (
-    <section className="pt-24 pb-10 md:pb-20 px-6">
+    <section className="pt-20 md:pt-20 pb-10 md:pb-16 px-6">
       <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col md:flex-row md:items-center gap-12 md:gap-16">
 
           {/* Text content */}
           <div className="flex-1 min-w-0">
 
-            {/* Mobile: circular photo + badge inline */}
-            <motion.div {...fadeUp(0.1)} className="flex items-center gap-4 mb-8 md:hidden">
-              <img
-                src="/assets/images/headshot.png"
-                alt="Gabriel Franco"
-                className="w-16 h-16 rounded-full object-cover border-2 border-gray-100 shadow-sm flex-shrink-0"
-              />
-              <span className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 bg-gray-100 px-4 py-1.5 rounded-full">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                Open to new projects
-              </span>
-            </motion.div>
-
             {/* Desktop: badge only */}
-            <motion.div {...fadeUp(0.1)} className="hidden md:block mb-8">
+            <motion.div {...fadeUp(0.1)} className="mb-3 md:mb-2">
               <span className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 bg-gray-100 px-4 py-1.5 rounded-full">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 Open to new projects
@@ -99,14 +86,16 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              <a
-                href="https://franco-sanbox.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-semibold text-gray-900 border-b-2 border-gray-900 pb-0.5 hover:border-primary hover:text-primary transition-colors duration-200"
-              >
-                See AI Demos
-              </a>
+              <div className="w-full sm:w-auto flex justify-center sm:justify-start">
+                <a
+                  href="https://franco-sanbox.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-gray-900 border-b-2 border-gray-900 pb-0.5 hover:border-primary hover:text-primary transition-colors duration-200"
+                >
+                  Still unsure? See AI Demos
+                </a>
+              </div>
             </motion.div>
           </div>
 
