@@ -8,13 +8,6 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.55, delay, ease: 'easeOut' },
 })
 
-const services = [
-  'AI & LLM',
-  'React · Next.js',
-  'Python · FastAPI',
-  'AWS · GCP · Azure',
-]
-
 export default function Hero() {
   return (
     <section className="pt-20 md:pt-20 pb-10 md:pb-16 px-6">
@@ -36,45 +29,49 @@ export default function Hero() {
               {...fadeUp(0.2)}
               className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-tightest text-gray-900 mb-6"
             >
-              Senior AI &amp;<br />
-              Full&#8209;Stack<br />
-              <span className="text-primary">Engineer.</span>
+              I build<br />
+              AI agents &amp;<br />
+              <span className="text-primary">LLM pipelines.</span>
             </motion.h1>
 
             <motion.p
               {...fadeUp(0.32)}
               className="text-lg text-gray-500 max-w-md leading-relaxed mb-8"
             >
-              I build AI-powered products and enterprise-grade software — without the agency overhead.
+              What could your team build with a senior AI engineer who's shipped it at Fortune 500 scale?
             </motion.p>
 
-            <motion.div {...fadeUp(0.42)} className="mb-8">
-              <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">
-                Enterprise experience at
+            <motion.div {...fadeUp(0.38)} className="mb-8 flex flex-col gap-2">
+              {[
+                'RAG system indexing 50k+ procedures for a global Fortune 500 chemicals company',
+                'Self-serve AI agent platform for Fortune 500 trading analysts',
+                'Trading AI platform shipped 2–3 months ahead of schedule',
+              ].map((blurb) => (
+                <div key={blurb} className="flex items-start gap-3">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                  <p className="text-sm text-gray-500 leading-snug">{blurb}</p>
+                </div>
+              ))}
+            </motion.div>
+
+<motion.div {...fadeUp(0.42)} className="mb-8">
+              <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mb-4">
+                Previously at
               </p>
-              <div className="flex flex-wrap gap-2">
-                {['Lead SWE · ExxonMobil · Global Trading', 'Senior SWE · Koch Industries · Invista'].map((co) => (
-                  <span key={co} className="px-4 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-700">
-                    {co}
-                  </span>
+              <div className="flex flex-wrap gap-6">
+                {[
+                  { company: 'ExxonMobil', role: 'Lead SWE · Global Trading' },
+                  { company: 'Koch Industries', role: 'Senior SWE · Invista' },
+                ].map(({ company, role }) => (
+                  <div key={company}>
+                    <div className="text-base font-black text-gray-900 tracking-tight">{company}</div>
+                    <div className="text-xs text-gray-400 mt-0.5">{role}</div>
+                  </div>
                 ))}
               </div>
             </motion.div>
 
-            <motion.div {...fadeUp(0.5)} className="mb-10">
-              <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">
-                What I build
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {services.map((s) => (
-                  <span key={s} className="px-3 py-1 rounded-full bg-gray-100 text-sm font-medium text-gray-600 whitespace-nowrap">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div {...fadeUp(0.58)} className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+<motion.div {...fadeUp(0.58)} className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
               <a
                 href={CALENDLY}
                 target="_blank"
